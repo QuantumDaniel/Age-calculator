@@ -1,0 +1,140 @@
+body{
+  margin:0;
+  background-image: url('image-gallery/1702212598108.jpg');
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position-y: -40px;
+}
+
+.heading{
+  top:0;
+  left:0;
+  right:0;
+  background-image:url('image-gallery/slider-default-bg.webp');
+  height:80px;
+  text-align-last: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  text-decoration: solid;
+  color:yellow;
+  border-style:solid;
+  border-color:red;
+  border-width: 5px;
+  text-shadow: 10px;
+  text-decoration-color: red;
+  text-transform: uppercase;
+}
+.sub-head{
+  width: 500px;
+  height:300px;
+  border-style:solid;
+  margin-top:5px;
+  margin-left:10px;
+  background-color:antiquewhite;
+}
+.message{
+  background-color:lightblue;
+  height:50px;
+  text-transform:uppercase;
+  align-content: center;
+  color:black;
+
+}
+.day{
+  display:inline-block;
+  margin-left:7px;
+}
+
+.month{
+  display:inline-block;
+  margin-left:5px;
+}
+
+.year{
+  display:inline-block;
+  margin-left:15px;
+}
+.display-picture{
+  display:inline-block;
+  position:absolute;
+  width:100px;
+  height:100px;
+  background-color:white;
+  margin-left:395px;
+  border-style:solid;
+  background-image: url('image-gallery/1703175037858.jpg');
+  background-size:100px 100px;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+.date{
+  position:relative;
+  margin-left:373px;
+  margin-top:40px;
+  display:inline-block;
+  font-size:small;
+  font-weight:bold;
+  
+}
+.day-display{
+  display:inline-block;
+  margin-left:5px;
+}
+
+
+.month-display{
+  display:inline-block;
+  margin-left:10px;
+}
+
+.year-display{
+  display:inline-block;
+  margin-left:23px;
+}
+.view-age{
+  display:inline-block;
+}
+.reset{
+  display:inline-block;
+}
+.details{
+  width:150px;
+  height:160px;
+  margin-left:5px;
+  align-content: center;
+  text-align: center;
+  margin-top:2px;
+}
+button{
+  cursor:pointer;
+}
+.upload-button{
+  display:inline-block;
+  margin-left:-30px;
+}
+.show-year{
+  width:50px;
+}
+.click-picture{
+  width:20px;
+  height:20px;
+
+}
+button{
+  background-color: red;
+  border-radius:50px;
+  width:55px;
+  padding:3px;
+}
+.upload-button2{
+  background-color:yellow;
+  margin-left:-45px;
+  padding:1px;
+  width:100px;
+}
+
+.js-details2{
+  background-color:skyblue;
+  margin-top:-47px;
+}

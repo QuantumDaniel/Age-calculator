@@ -11,7 +11,7 @@ body{
   top:0;
   left:0;
   right:0;
-  background-image:url('image-gallery/slider-default-bg.webp');
+  background-color:blue;
   height:80px;
   text-align-last: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -24,21 +24,35 @@ body{
   text-shadow: 10px;
   text-decoration-color: red;
   text-transform: uppercase;
+  display:flex;
+  justify-content:center;
 }
-.sub-head{
-  width: 500px;
-  height:300px;
+@media (max-width:600px){
+  .heading{
+    font-size:small;
+  }
+}
+.main{
+  display:flex;
+  position:absolute;
+  flex-direction:column;
+  justify-content:center;
+  height:70vh;
   border-style:solid;
   margin-top:5px;
-  margin-left:10px;
   background-color:antiquewhite;
+  left:100px;
+  right:100px;
 }
 .message{
   background-color:lightblue;
-  height:50px;
+  height:5vh;
   text-transform:uppercase;
   align-content: center;
   color:black;
+  font-size:larger;
+  position:absolute;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 
 }
 .day{
@@ -56,17 +70,17 @@ body{
   margin-left:15px;
 }
 .display-picture{
-  display:inline-block;
-  position:absolute;
-  width:100px;
-  height:100px;
+  width:10vw;
+  height:20vh;
+  margin-left:0;
+  margin-top:6%;
   background-color:white;
-  margin-left:395px;
   border-style:solid;
-  background-image: url('image-gallery/1703175037858.jpg');
-  background-size:100px 100px;
+  background-image: url('images/1703175037858.jpg');
+  background-size:115px 120px;
   background-repeat: no-repeat;
   background-position:center;
+  
 }
 .date{
   position:relative;

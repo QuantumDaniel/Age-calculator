@@ -1,31 +1,23 @@
-body{
-  margin:0;
-  background-color:#00ff00;
-  background-position:center;
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position-y: -40px;
-}
-
-.heading{
-  top:0;
-  left:0;
-  right:0;
-  background-color:blue;
-  height:80px;
-  text-align-last: center;
+body {
+  margin: 0;
+  background-color: #00ff00;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
+}
+.heading {
+  background-color: blue;
+  color: white;
   font-size: x-large;
-  text-decoration: solid;
-  color:white;
-  border-style:solid;
-  border-color:red;
-  border-width: 5px;
-  text-shadow: 10px;
-  text-decoration-color: red;
+  text-align: center;
+  padding-bottom:20px;
   text-transform: uppercase;
-  display:flex;
+  border: 5px solid red;
+  height: 80px;
+  display: flex;
   justify-content:center;
+  text-shadow: 2px 2px 5px black;
+  position: relative;
 }
 @media (max-width:600px){
   .heading{
@@ -36,24 +28,26 @@ body{
   display:flex;
   position:absolute;
   flex-direction:column;
-  justify-content:center;
   height:70vh;
   border-style:solid;
   margin-top:5px;
   background-color:antiquewhite;
-  left:100px;
-  right:100px;
+  left:50px;
+  right:50px;
 }
 .message{
   background-color:lightblue;
   height:5vh;
+  width:100%;
   text-transform:uppercase;
   align-content: center;
   color:black;
   font-size:larger;
   position:absolute;
   font-family:Georgia, 'Times New Roman', Times, serif;
-
+  display:absolute;
+  flex-shrink:0;
+  
 }
 .day{
   display:inline-block;
@@ -70,32 +64,47 @@ body{
   margin-left:15px;
 }
 .display-picture{
-  width:10vw;
-  height:20vh;
+  width:110px;
+  height:110px;
+  display:relative;
   margin-left:0;
-  margin-top:6%;
   background-color:white;
   border-style:solid;
   background-image: url('images/1703175037858.jpg');
   background-size:115px 120px;
   background-repeat: no-repeat;
   background-position:center;
+  margin-top:31px;
+   flex:0 0 auto;
   
 }
 .date{
-  position:relative;
-  margin-left:373px;
-  margin-top:40px;
-  display:inline-block;
+  
+  display:block;
   font-size:small;
   font-weight:bold;
+   background-color: blue;
+  display:inline;
+  color:white;
+  border-radius:15px;
+  padding:5px;
+  width:20vw;
+  margin-top:-14em;
+  position:absolute;
+  margin-left:76%;
+  flex: 0 0 auto;
+
   
+}
+@media (max-width:900px){
+  .date{
+    margin-left:40%;
+  }
 }
 .day-display{
   display:inline-block;
   margin-left:5px;
 }
-
 
 .month-display{
   display:inline-block;
@@ -113,12 +122,32 @@ body{
   display:inline-block;
 }
 .details{
-  width:150px;
+  width:30vw;
   height:160px;
-  margin-left:5px;
+  margin-left:50%;
   align-content: center;
   text-align: center;
-  margin-top:2px;
+  display:inline-block;
+  position:relative;
+  
+}
+@media (max-width:700px){
+  .js-details2{
+    margin-top:15em;
+    position:absolute;
+    width:24.9em;
+    height:30.2vh;
+
+  }
+  .details{
+    margin-left:0;
+    display:absolute;
+    width:100%;
+  
+  }
+  .heading{
+    padding:0;
+  }
 }
 button{
   cursor:pointer;
@@ -126,6 +155,7 @@ button{
 .upload-button{
   display:inline-block;
   margin-left:-30px;
+  margin-top:5px;
 }
 .show-year{
   width:50px;
@@ -150,5 +180,5 @@ button{
 
 .js-details2{
   background-color:skyblue;
-  margin-top:-47px;
+  
 }

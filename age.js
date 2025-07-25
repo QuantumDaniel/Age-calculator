@@ -22,7 +22,7 @@ let day = '';
 
 let month = '';
 let picture = '';
-showYear = document.querySelector('.show-year')
+let showYear = document.querySelector('.show-year');
 
 
 const monthName = {

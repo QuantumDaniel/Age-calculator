@@ -32,8 +32,8 @@ body {
   border-style:solid;
   margin-top:5px;
   background-color:antiquewhite;
-  left:40px;
-  right:40px;
+  left:10px;
+  right:10px;
 }
 .message{
   background-color:lightblue;
@@ -179,6 +179,19 @@ button{
 }
 
 .js-details2{
+
   background-color:skyblue;
   
+}
+@media (max-width:328px){
+  .date{
+    margin-top:-230px;
+    margin-left:120px;
+  }
+  .upload-button{
+    margin-left:50px;
+  }
+  .reset{
+    margin-left:5px;
+  }
 }

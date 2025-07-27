@@ -63,12 +63,7 @@
 
     }];
 
-
-
-
-
     object.forEach((value) => {
-      let image = `<img  src="${object.picture}" class="js-picture"  alt="upload-image" width="200" height="200">`;
 
       document.querySelector('.js-year-of-birth').innerHTML = `YEAR OF BIRTH:` + `${value.year}`;
 
@@ -140,14 +135,25 @@
     document.querySelector('.js-show-year').value = '';
     document.querySelector('.js-month-main').value = '';
     document.querySelector('.js-day-main').value = '';
+    img.src = "images/1703174885822.jpg";
+    document.querySelector('.js-picture1').value = '';
 
   });
 
+
+const img = document.getElementById('preview');
+const input = document.getElementById('fileInput');
+  input.addEventListener('change', function() {
+    const file = this.files[0];
+    if (file) {
+      img.src = URL.createObjectURL(file);
+    }
+  });
+  img.src =  "images/1703174885822.jpg";
+  /*
   document.querySelector('.js-upload-button').addEventListener('click', () => {
-    let picture = document.querySelector('.js-picture1').value;
-    document.querySelector('.js-display-picture').innerHTML = `<div class="click-picture"><img src="${picture}"></div>`;
-
   });
+  */
 
 
 

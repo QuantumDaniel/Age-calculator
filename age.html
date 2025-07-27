@@ -18,7 +18,9 @@
       <div class="message">
         <marquee>please input your date of birth together with your profile picture from the boxes below. </marquee>
       </div>
-      <div class="display-picture js-display-picture"></div>
+      <div class="display-picture js-display-picture">
+        <img id="preview" width="110" height="110"/>
+      </div>
       <div class="day"> DAY</div>
       <div class="month">MONTH</div>
       <div class="year">YEAR</div>
@@ -129,7 +131,7 @@
       </div>
 
       <div>
-        <input class="js-picture1" type="file" accept="image/*">
+        <input id = "fileInput" class="js-picture1" type="file" accept="image/*">
         <div class="upload-button">
           <button class="js-upload-button upload-button2">Upload picture</button>
         </div>

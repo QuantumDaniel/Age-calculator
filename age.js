@@ -27,24 +27,28 @@
   
   function checkInput() {
     showYear.value === '' || monthMain.value === '' || dayMain.value === '' ? viewAge.disabled = true : viewAge.disabled = false;
-    showYear.value <= 1900 || showYear.value >= 2025 ? viewAge.disabled = true : viewAge.disabled = false;
+    showYear.value <= 1900 || showYear.value >= 2025 || showYear.value<0 ? viewAge.disabled = true : viewAge.disabled = false;
   }
   checkInput();
 
   document.querySelector('.js-show-year').addEventListener("keyup", (event) => {
     event.key === 'Enter' && document.querySelector('.js-view-age').click();
     checkInput();
-  });
+      });
 
   const monthName = {
     first: 'JANUARY', second: 'FEBRUARY', third: 'MARCH', fourth: 'APRIL', fifth: 'MAY', sixth: 'JUNE', seventh: 'JULY', eigth: 'AUGUST', ninth: 'SEPTEMBER', tenth: 'OCTOBER', eleventh: 'NOVEMBER', twelve: 'DECEMBER'
 
   }
-
+ let changeImage = document.querySelector('.js-main');
+ let changeTimeColor = document.querySelector('.js-date');
   document.querySelector('.js-view-age').addEventListener('click', () => {
+   
+    changeImage.style.backgroundColor = "blue";
+    changeTimeColor.style.backgroundColor = "white";
+    changeTimeColor.style.color  = "black";
 
     document.querySelector('.js-details').classList.add('js-details2');
-
 
     document.querySelector('.js-display2-age').innerHTML = 'You are:';
     document.querySelector('.js-display-summary').innerHTML = 'SUMMARY:'
@@ -137,9 +141,11 @@
     document.querySelector('.js-day-main').value = '';
     img.src = "images/1703174885822.jpg";
     document.querySelector('.js-picture1').value = '';
-
+    changeImage.style.backgroundColor = "antiquewhite";
+    changeTimeColor.style.backgroundColor = "blue";
+    changeTimeColor.style.color  = "white";
+    checkInput();
   });
-
 
 const img = document.getElementById('preview');
 const input = document.getElementById('fileInput');
@@ -150,10 +156,9 @@ const input = document.getElementById('fileInput');
     }
   });
   img.src =  "images/1703174885822.jpg";
-  /*
-  document.querySelector('.js-upload-button').addEventListener('click', () => {
-  });
-  */
+
+  
+  
 
 
 
